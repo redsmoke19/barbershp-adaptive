@@ -4,11 +4,13 @@
 @import "utils/fonts";
 
 html {
-  font-size: $base-font-size;
   height: 100%;
 }
 
-body { height: 100%; }
+body {
+  font-size: $base-font-size;
+  height: 100%;
+}
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
@@ -50,7 +52,8 @@ button { outline: none; }
 
 .container {
   margin: 0 auto;
-  max-width: $content-size;
+  max-width: $mobile-size;
+  padding: 20px 0;
   width: 100%;
 }
 
