@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    height: 85px;
+    @media screen and (min-width: $tablet-size) {
+      order: 2;
+      height: 400px;
+    }
+    @media screen and (min-width: $desktop-size){
+      height: 650px;
+    }
+  }
+}

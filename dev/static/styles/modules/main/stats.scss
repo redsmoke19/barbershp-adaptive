@@ -1,0 +1,42 @@
+.stats {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 320px;
+  @media screen and (min-width: $tablet-size) {
+    width: 640px;
+    margin-top: -185px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  &__header {
+    padding: 30px 20px 25px 20px;
+    @media screen and (min-width: $desktop-size) {
+      width: 240px;
+    }
+  }
+  &__list {
+    width: 100%;
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+    }
+    @media screen and (min-width: $desktop-size) {
+      width: 640px;
+    }
+  }
+  &__legend {
+    &--top {
+      display: none;
+    }
+    &--bottom {
+      @media screen and (min-width: $tablet-size) {
+        display: none;
+      }
+      @media screen and (min-width: $desktop-size) {
+        display: none;
+      }
+    }
+  }
+}

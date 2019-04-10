@@ -9,3 +9,11 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+@mixin no-outline () {
+  outline: none;
+  background: transparent;
+  &::before {
+    display: none;
+  }
+}

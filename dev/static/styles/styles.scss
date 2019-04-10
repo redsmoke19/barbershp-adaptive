@@ -8,8 +8,12 @@ html {
 }
 
 body {
+  background-color: $backgroundGrey;
+  color: $main-color;
   font-size: $base-font-size;
+  font-style: normal;
   height: 100%;
+  line-height: 27px;
 }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
@@ -32,6 +36,11 @@ svg,
 video,
 textarea { vertical-align: middle; }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 textarea { resize: none; }
 
 section { position: relative; }
@@ -48,13 +57,28 @@ button { outline: none; }
   height: 100%;
 }
 
-.content { flex: 1 0 auto; }
+.page-main { flex: 1 0 auto; }
 
 .container {
   margin: 0 auto;
   max-width: $mobile-size;
   padding: 20px 0;
   width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 //Модули
