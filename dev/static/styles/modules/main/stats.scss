@@ -11,18 +11,25 @@
     margin-top: -160px;
   }
   &__header {
-    padding: 30px 20px 25px 20px;
+    padding: 30px 40px 25px 40px;
     @media screen and (min-width: $desktop-size) {
-      width: 240px;
+      width: 320px;
     }
   }
   &__list {
-    width: 100%;
-    @media screen and (min-width: $tablet-size) {
-      display: flex;
-    }
-    @media screen and (min-width: $desktop-size) {
-      width: 640px;
+    border-spacing: 0;
+    tbody {
+      @media screen and (min-width: $tablet-size) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 640px;
+        tr {
+          width: 320px;
+        }
+        @media screen and (min-width: $desktop-size) {
+          width: 640px;
+        }
+      }
     }
   }
   &__legend {
