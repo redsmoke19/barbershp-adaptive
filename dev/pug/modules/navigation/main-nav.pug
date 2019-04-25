@@ -1,5 +1,6 @@
-nav.main-nav
-    button(type="button").main-nav__toggle Открыть меню
+nav.main-nav.main-nav--opened
+    button(type="button").main-nav__toggle
+        span.visually-hidden Открыть меню
     .main-nav__wrapper
         ul.main-nav__list.site-list
             li.site-list__item.site-list__item--active
@@ -15,4 +16,3 @@ nav.main-nav
         ul.main-nav__list.user-list
             li.user-list__item
                 a(href="#").user-list__login Войти
-        

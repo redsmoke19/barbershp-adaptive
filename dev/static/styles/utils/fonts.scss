@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'PT Sans Narrow Regular';
-  src: url('../../fonts/PTSans-Narrow.eot');
-  src: url('../../fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PTSans-Narrow.woff') format('woff'),
-  url('../../fonts/PTSans-Narrow.ttf') format('truetype');
+  src: url('/static/fonts/PTSans-Narrow.eot');
+  src: url('/static/fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/PTSans-Narrow.woff') format('woff'),
+  url('/static/fonts/PTSans-Narrow.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans Narrow Bold';
-  src: url('../../fonts/PTSans-NarrowBold.eot');
-  src: url('../../fonts/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PTSans-NarrowBold.woff') format('woff'),
-  url('../../fonts/PTSans-NarrowBold.ttf') format('truetype');
+  src: url('/static/fonts/PTSans-NarrowBold.eot');
+  src: url('/static/fonts/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/PTSans-NarrowBold.woff') format('woff'),
+  url('/static/fonts/PTSans-NarrowBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
