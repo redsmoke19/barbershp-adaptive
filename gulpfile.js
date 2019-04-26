@@ -20,6 +20,7 @@ $.gulp.task('dev', $.gulp.series(
     'fonts',
     'styles:dev',
     'img:dev',
+    'js:dev',
     'svg'
   )
 ));
@@ -29,7 +30,10 @@ $.gulp.task('build', $.gulp.series(
   $.gulp.parallel(
     'pug',
     'fonts',
-    'styles:build-min'
+    'styles:build-min',
+    'img:build',
+    'js:build-min',
+    'svg'
   )
 ));
 $.gulp.task('default', $.gulp.series(

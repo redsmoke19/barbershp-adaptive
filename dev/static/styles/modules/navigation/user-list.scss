@@ -1,0 +1,73 @@
+.user-list {
+  @media screen and (min-width: $tablet-size) {
+    width: 60px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    width: auto;
+    max-width: 160px;
+  }
+  &__login {
+    position: relative;
+    display: block;
+    padding: 17px 21px;
+    padding-left: 49px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    @media screen and (min-width: $tablet-size) {
+      width: 60px;
+      height: 70px;
+      padding: 0;
+      font-size: 0;
+      &:hover .user-list__login--icon {
+        opacity: 1;
+        fill: #826550;
+      }
+      &:active .user-list__login--icon {
+        opacity: 0.3;
+        fill: #ffffff;
+      }
+    }
+    @media screen and (min-width: $desktop-size) {
+      position: relative;
+      width: auto;
+      height: auto;
+      padding: 25px 30px 23px 50px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: #000000;
+        background-color: #ffffff;
+      }
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+      }
+      &:hover .user-list__login--icon {
+        opacity: 0.3;
+        fill: #000000;
+      }
+      &:active .user-list__login--icon {
+        opacity: 0.1;
+      }
+    }
+    &--icon {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      @include size(16px);
+      opacity: 0.5;
+      fill: #ffffff;
+      @media screen and (min-width: $tablet-size) {
+        top: 29px;
+        left: 12px;
+      }
+      @media screen and (min-width: $desktop-size) {
+        left: 15px;
+      }
+    }
+  }
+}

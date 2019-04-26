@@ -1,18 +1,19 @@
-nav.main-nav.main-nav--opened
+nav.main-nav.main-nav--closed.main-nav--nojs
     button(type="button").main-nav__toggle
         span.visually-hidden Открыть меню
     .main-nav__wrapper
         ul.main-nav__list.site-list
             li.site-list__item.site-list__item--active
-                a Главная
-            li.site-list__item.site-list__item
-                a(href="#") Наши работы
-            li.site-list__item.site-list__item
-                a(href="#") Записаться
-            li.site-list__item.site-list__item
-                a(href="#") Контакты
-            li.site-list__item.site-list__item
-                a(href="#") HTML Academy
+                a.site-list__link Главная
+            li.site-list__item
+                a(href="#").site-list__link Наши работы
+            li.site-list__item
+                a(href="#").site-list__link Записаться
+            li.site-list__item
+                a(href="#").site-list__link Контакты
+            li.site-list__item
+                a(href="#").site-list__link HTML Academy
         ul.main-nav__list.user-list
             li.user-list__item
                 a(href="#").user-list__login Войти
+                    +icon('login','user-list__login--icon')

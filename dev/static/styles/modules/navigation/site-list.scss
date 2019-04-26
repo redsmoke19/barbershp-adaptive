@@ -1,0 +1,88 @@
+.site-list {
+  font-weight: bold;
+  @media screen and (min-width: $tablet-size) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 570px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    width: 780px;
+  }
+  &__item {
+    @media screen and (min-width: $tablet-size) {
+      margin-right: 32px;
+      &--active {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: -3px;
+          left: 0;
+          height: 3px;
+          background-color: #826550;
+        }
+      }
+      &:last-child { margin-right: 0; }
+    }
+    @media screen and (min-width: $desktop-size) {
+      margin-right: 0;
+      &--active::after {
+        right: 30px;
+        left: 30px;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    padding: 12px 21px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #826550;
+    border-top: 1px solid #886550;
+    border-bottom: 1px solid #71543f;
+    &[href]:hover {
+      background-color: #755a46;
+      border-top-color: #755a46;
+    }
+    &[href]:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #6a4d38;
+      border-top-color: #6a4d38;
+    }
+    @media screen and (min-width: $tablet-size) {
+      padding: 0;
+      padding-top: 25px;
+      padding-bottom: 23px;
+      background: none;
+      border: none;
+      &[href]:hover {
+        color: #826550;
+        background-color: #000000;
+      }
+      &[href]:active {
+        color: #ffffff;
+        background-color: #000000;
+        opacity: 0.3;
+      }
+    }
+    @media screen and (min-width: $desktop-size) {
+      padding-right: 31px;
+      padding-left: 31px;
+      &[href]:hover {
+        color: #000000;
+        background-color: #ffffff;
+      }
+      &[href]:active {
+        color: rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+        opacity: 1;
+      }
+    }
+  }
+}

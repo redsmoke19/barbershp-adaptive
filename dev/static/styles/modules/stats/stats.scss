@@ -1,0 +1,178 @@
+.stats {
+  margin: 0 auto;
+  width: 320px;
+  @media screen and (min-width: $tablet-size) {
+    width: 640px;
+    margin-top: -174px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  &__header {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 30px 40px 25px 40px;
+    @media screen and (min-width: $tablet-size) {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: -15px;
+        border: 15px solid transparent;
+        border-bottom-color: #ffffff;
+        transform: round(45deg);
+      }
+    }
+    @media screen and (min-width: $desktop-size) {
+      width: 320px;
+      &::before { top: 22px; }
+    }
+  }
+  &__slogan {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      width: 240px;
+      margin-bottom: 18px;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: left;
+      text-transform: none;
+    }
+    @media screen and (min-width: $desktop-size) {
+      width: auto;
+      margin-bottom: 42px;
+    }
+  }
+  &__intro {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    @media screen and (min-width: $tablet-size) {
+      width: 257px;
+      margin-top: 5px;
+      padding-right: 47px;
+      text-align: left;
+    }
+    @media screen and (min-width: $desktop-size) {
+      width: auto;
+      margin-bottom: 32px;
+      padding-right: 30px;
+    }
+  }
+  &__list {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+    }
+    @media screen and (min-width: $desktop-size) {
+      display: flex;
+      width: 640px;
+    }
+  }
+  &__tbody {
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    color: #ffffff;
+    background-color: #404040;
+    &:nth-child(2) { background-color: #4e4e4e; }
+    &:nth-child(3) { background-color: #353535; }
+    @media screen and (min-width: $tablet-size) {
+      width: 320px;
+      padding: 25px 35px;
+      padding-bottom: 28px;
+    }
+  }
+  &__value {
+    font-size: 40px;
+    line-height: 40px;
+    width: 50%;
+    padding: 20px;
+    padding-right: 0;
+    padding-bottom: 19px;
+    vertical-align: top;
+    sup {
+      top: -0.35em;
+      margin-left: 5px;
+    }
+    @media screen and (min-width: $tablet-size) {
+      font-size: 72px;
+      line-height: 72px;
+      display: block;
+      width: auto;
+      margin-bottom: 7px;
+      padding: 0;
+    }
+  }
+  &__field {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+    width: 50%;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 19px;
+    vertical-align: top;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 20px;
+      line-height: 27px;
+      text-align: left;
+      display: block;
+      width: auto;
+      padding: 0;
+      br {
+        display: none;
+      }
+    }
+  }
+  &__legend {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    &--top {
+      display: none;
+      @media screen and (min-width: $tablet-size){
+        display: block;
+        width: 240px;
+        color: rgba(0, 0, 0, 0.3);
+      }
+      @media screen and (min-width: $desktop-size) {
+        width: auto;
+      }
+    }
+    &--bottom {
+      padding: 20px;
+      padding-bottom: 14px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $backgroundGrey;
+      sup {
+        top: -0.25em;
+        font-size: 90%;
+      }
+      @media screen and (min-width: $tablet-size) {
+        display: none;
+      }
+      @media screen and (min-width: $desktop-size) {
+        display: none;
+      }
+    }
+  }
+}
