@@ -3,6 +3,7 @@
   @media screen and (min-width: $tablet-size) {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1; //Список пунктов меню тянем на всю ширину
     justify-content: flex-start;
     width: 570px;
   }
